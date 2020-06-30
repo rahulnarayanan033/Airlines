@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <style>
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background:url("sunsetplane.jpg");                
+                background-repeat: no-repeat;
+                
+            }
+            .login{
+                margin-top: 100px;
+                margin-left:500px;
+                background-color: white;
+                width:360px;
+                height:480px;
+                color: black;
+            }
+            .avt{
+                margin-left: 110px;
+                margin-top: -70px;
+                border-radius: 90px;
+            }
+            #txtuser,#txtpwd{
+				font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                padding:5px;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid red;
+                background: transparent;
+                width: 200px;
+                color: black;
+            }
+            label{
+                margin-left: 80px;
+            }
+            #sub,#create{
+				font-size:20px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                width: 250px;
+                height: 48px;
+                border-radius: 10px;
+                background-color:transparent;
+            }
+            #sub:hover{
+                background-color: red;
+                color: white;
+                cursor: pointer;
+            }
+            #create:hover{
+                background-color: red;
+                color: white;
+                cursor: pointer;
+            }
+            #user{
+                margin-left: 100px;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+            <p></p>
+            
+            <div class="login">
+                <form action="admin.jsp" method="post">
+                <img class="avt" src="avatar.jpg">
+                <br>
+                <br>
+                <br>
+                <br>
+                <label>Username</label><br><br><center><input placeholder="Enter Username" type="text" id="txtuser" name="txtuser"></center><br><br>
+                <label>Password</label><br><br><center><input placeholder="Enter Password" type="password" id="txtpwd" name="txtpwd"></center><br><br>
+                
+                <center><input type="submit" id="sub" value="Log In"></center><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="user"></label><br><br>
+                 
+                </form>
+        
+            </div>
+            </body>
+    
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background:url("plane.jpg");
+                background-repeat: no-repeat;
+                width:100px;
+                height:100px;
+            }
+            .account{
+                background-color: white;
+                margin-left: 650px;
+                margin-top: 50px;
+                width:300px;
+                height:590px;
+                border:none;
+            }
+            #txtfname,#txtlname,#txtuser,#txtpwd,#txtmob,#txtcpwd{
+                padding:5px;
+                margin-left: 50px;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid red;
+                background: transparent;
+                width: 200px;
+                color: black;
+            }
+            label{
+                margin-left:50px;
+                color: black;
+            }
+            #ct{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size:20px;
+                margin-left: 25px;
+                height: 40px;
+                width: 250px;
+                border-radius: 10px;
+            }
+            #ct:hover{
+background-color:red;
+                cursor: pointer;
+                
+                
+              ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+                
+            }
+        </style>
+        <script type="text/javascript"> 
+        $(document).ready(function() { 
+            $("#ct").click(function() { 
+                var inputVal = $("fname").val(); 
+                alert($.isNumeric(inputVal)); 
+            }); 
+        }); 
+    </script> 
+    </head>
+    <body>
+        
+        <form method="post" action="Login.jsp">
+        <div class="account">
+            <br>
+            <br>
+            <label>First Name</label><br><br>
+            <input type="text" id="txtfname" name="txtfname" pattern="[a-zA-Z]" title="Enter Valid Name" required placeholder="First Name"><br><br>
+            <label>Last Name</label><br><br>
+            <input type="text" id="txtlname" name="txtlname" pattern="[a-zA-Z]" title="Enter Valid Name" required placeholder="Last Name"><br><br>
+            <label>Username</label><br><br>
+            <input type="text" id="txtuser" name="txtuser" pattern="[A-Z][a-z][0-9]" title="Enter valid Username" required placeholder="Username"><br><br>
+            <label>Password</label><br><br>
+            <input type="password" id="txtpwd" name="txtpwd"><br><br>
+            
+            <label>Mobile No</label><br><br>
+            <input type="text" id="txtmob" name="txtmob"><br><br>
+            <input type="submit" id="ct" value="Create">
+        </div>
+        </form>
+    </body>
+</html>

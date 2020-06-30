@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style>
+            body{
+                background:url("planesky.jpg");
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            #from,#dest,#dep,#adults,#child,#infant{
+                padding:5px;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid red;
+                background: transparent;
+            }
+            #search,#ow,#rt,#mt{
+                      background-color: white;
+			margin-top:20px;
+                border-radius: 40px;
+                height:40px;
+                width: 120px;
+            }
+            #search:hover{
+			background-color:red;
+                cursor:pointer;
+            }
+            #ow:hover{
+			background-color:red;
+                cursor: pointer;
+            }
+            #rt:hover{
+			background-color:red;
+                cursor: pointer;
+            }
+            #mt:hover{
+			background-color:red;
+                cursor: pointer;
+            }
+			div{
+			height:400px;
+			margin-left:380px;
+                        margin-top: 50px;
+			height:400px;
+                        width:650px;
+			background:white;
+			}
+                        h1{
+                            color:red;
+                        }
+        </style>
+    </head>
+    <body>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+        <div>
+            <br>
+            
+            <center><h1>Search Your Flights Here!</h1></center>
+            <form action="search.jsp" method="post">
+                <center><label>From</label>&nbsp;&nbsp;
+                    <select name="from" id="from"><option>Mumbai</option><option>Delhi</option><option>Kolkata</option><option>Chennai</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>Destination</label>&nbsp;&nbsp;<select name="dest" id="dest"><option>Mumbai</option><option>Delhi</option><option>Kolkata</option><option>Chennai</option></select><br><br><br></center>
+                    <center> <label>Departure</label><input type="date" name="date" id="dep"></center><br><br><br>
+                    <center><input type="text" id="adults" name="no" placeholder="Travellers"></center><br><br>
+                    <center><input type="submit" id="search" value="Search"></center>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background: purple;
+                background-repeat: no-repeat;
+                width:100px;
+                height:100px;
+               
+                
+            }
+            label{
+                margin-left:50px;
+                color: black;
+                font-size: 24px;
+                 
+            }
+            select{
+                margin-left:50px;
+                color: black;
+                width:70px;
+                height:40px;
+            }
+            .payment{
+                background-color: white;
+                margin-left: 370px;
+                margin-top: 100px;
+                width:750px;
+                height:550px;
+                border:none;
+            }
+            #cardno,#cardv,#cardname{
+                padding:10px;
+                margin-left: 70px;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid red;
+                background: transparent;
+                width: 300px;
+                height:100px;
+                color:black;
+                font-size: 20px;
+            }
+            #pay{
+                width:250px;
+                height:50px;
+                border-radius:20px; 
+                margin-left:60px;
+                background: purple;
+                color: white;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="payment">
+        <center>
+            <input placeholder="CARD NO." TYPE="text" id="cardno"><br><br><br><br>
+        <label>Select Month:</label><select><option value="01">01</option><option value="02">02</option><option value="03">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>&nbsp;&nbsp;
+        <label>Select Year:</label><select><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option></select>&nbsp;&nbsp;
+        <input placeholder="CVV" type="text" id="cardv"><br><br>
+        <input placeholder="CARDHOLDER NAME." type="text" id="cardname"><br><br><br>
+        <input type="button" id="pay" value="Pay Now">
+        </center>
+        </div>    
+    </body>
+</html>
